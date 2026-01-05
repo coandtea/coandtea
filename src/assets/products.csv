@@ -1,0 +1,38 @@
+name,category,price_hot,price_cold,image,is_favorite,description
+Latte,Espresso Based,18,20,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrc2tPztEd3gDD0g_tw2hoFgQzY6oclHt3FQ&s,FALSE,Kopi susu klasik dengan foam lembut
+Cappucino,Espresso Based,18,20,https://guentercoffee.com/cdn/shop/articles/anleitung-cappuccino-blogheader.jpg?v=1758119315&width=1200,TRUE,Perpaduan seimbang espresso susu dan foam tebal
+Affogato,Espresso Based,,18,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDaxPdlBJLGoGxtOXF1TLCBPjys4LLdVix6w&s,TRUE,Espresso panas disiram ke atas es krim vanilla
+Long Black,Espresso Based,12,14,https://i0.wp.com/kopidewa.com/wp-content/uploads/Americano-Vs-Long-Black.jpg?fit=960%2C640&ssl=1,FALSE,Kopi hitam pekat dengan aroma kuat
+Sanger,Espresso Based,17,18,sanger2.png,TRUE,Kopi susu khas Aceh yang creamy dan nikmat
+Sanger Espresso,Espresso Based,13,,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNLDZqpx7wJ6YiUiurP2xWyZhUs16_f4Ih7g&s,TRUE,Versi lebih kuat dari Sanger biasa
+Sanger Double Espresso,Espresso Based,23,,https://www.jagel.id/api/listimage/v/SANGER-DOUBLE-ESPRESSO-0-4525f11910bcbdc7.jpg,FALSE,Sanger dengan double shot espresso
+Kosu,Espresso Based,18,20,kosu.webp,TRUE,Kopi Susu gula aren kekinian
+Moccacino,Espresso Based,18,20,https://awsimages.detik.net.id/community/media/visual/2020/11/04/cara-meracik-mochaccino-2.jpeg?w=600&q=90,FALSE,Perpaduan kopi dan coklat yang manis
+Caramel Macchiato,Espresso Based,18,20,https://dinnerthendessert.com/wp-content/uploads/2023/10/Caramel-Macchiato-10.jpg,TRUE,Espresso dengan susu dan saus karamel
+Caramel Latte,Espresso Based,18,20,https://www.forkinthekitchen.com/wp-content/uploads/2022/06/220518.homemade.caramel.latte-6630.jpg,TRUE,Latte dengan sentuhan rasa karamel
+Coffee Chocolate,Espresso Based,18,20,https://www.tasteofhome.com/wp-content/uploads/2024/07/EXP_FT22_20063_ST_12_13_1C-Hot-Chocolate-Coffee-SQ.jpg,FALSE,Kopi dengan rasa coklat yang dominan
+Vanilla Latte,Espresso Based,18,20,https://www.forkinthekitchen.com/wp-content/uploads/2022/08/220629.iced_.latte_.vanilla-9009.jpg,FALSE,Latte dengan aroma vanilla harum
+Hazelnut Latte,Espresso Based,18,20,https://tyberrymuch.com/wp-content/uploads/2024/03/Hazelnut-Iced-Coffee-Recipe.jpg,FALSE,Latte dengan rasa kacang hazelnut
+Dark Chocolate,Non Coffee,16,18,dark-chocolate.webp,TRUE,Coklat murni yang kental dan tidak terlalu manis
+Chocolate Caramel,Non Coffee,18,20,dark-chocolate.webp,TRUE,Coklat dengan tambahan saus karamel
+Chocolate Vanilla,Non Coffee,18,20,dark-chocolate.webp,TRUE,Coklat dengan aroma vanilla
+Chocolate Hazelnut,Non Coffee,18,20,dark-chocolate.webp,TRUE,Coklat dengan rasa hazelnut
+Milkshake Chocolate,Non Coffee,,20,milkshake.webp,TRUE,Minuman coklat dingin yang dikocok hingga berbusa
+Frappucino Chocolate,Non Coffee,,20,https://www.swankyrecipes.com/wp-content/uploads/2013/10/double-chocolate-chip-frap.jpg,FALSE,Ice blend coklat ala cafe
+Taro,Non Coffee,,20,taro.webp,FALSE,Minuman rasa ubi ungu yang unik dan manis
+Banana Chocolate,Non Coffee,,17,https://img-global.cpcdn.com/recipes/c7351b825e5492a5/680x781cq80/3-ingredient-chocolate-banana-smoothie-foto-resep-utama.jpg,TRUE,Perpaduan pisang dan coklat yang segar
+Banana Vanilla Chocolate,Non Coffee,,18,https://img-global.cpcdn.com/recipes/c7351b825e5492a5/680x781cq80/3-ingredient-chocolate-banana-smoothie-foto-resep-utama.jpg,TRUE,Pisang coklat dengan tambahan vanilla
+Milk,Non Coffee,12,13,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFZFcF-DrL60bYfJPVng9hgvogsPZgzrFfCg&s,FALSE,Susu segar murni
+Manggo Yakult,Non Coffee,,16,mango-yakult.webp,FALSE,Kesegaran mangga dicampur yakult
+Teh Tarik,Tea,11,13,https://upload.wikimedia.org/wikipedia/commons/2/26/Teh_Tarik.jpg,FALSE,Teh susu khas melayu yang ditarik
+Matcha Latte,Tea,18,20,matcha-latte.webp,FALSE,Teh hijau Jepang dengan susu
+Matcha Lemon,Tea,15,17,matcha-latte.webp,FALSE,Matcha segar dengan perasan lemon
+Matcha Yakult,Tea,,17,matcha.webp,FALSE,Matcha dengan rasa asam manis Yakult
+Lemon Tea,Tea,9,11,Lemontea.jpeg,FALSE,Teh dengan irisan lemon segar
+Milk Tea,Tea,15,16,Lemontea.jpeg,FALSE,Teh susu klasik yang creamy
+Kopi Tubruk,Traditional Coffee,8,,https://kopikita.id/wp-content/uploads/2023/01/Kopi-Tubruk.jpg,FALSE,Kopi hitam tradisional tanpa saring
+Kopi Turki,Traditional Coffee,8,10,https://www.grandturkishbazaar.com/wp-content/uploads/2017/12/kuru-kahveci-mehmet-efendi-turkish-coffee-500g-9.jpg,FALSE,Kopi ala turki yang pekat
+Cappucino Float,Float,,25,https://img-global.cpcdn.com/recipes/4edcbd3d894063ae/680x781cq80/cappucino-float-ice-foto-resep-utama.jpg,FALSE,Cappucino dengan topping es krim
+Chocolate Float,Float,,20,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgytHBU1z9CaywfCddsTiME-cq0L27s1mvnA&s,FALSE,Coklat dingin dengan topping es krim
+Hazelnut Float,Float,,25,https://media.saltwindscoffee.com/wp-content/uploads/2023/06/AdobeStock_464132584-scaled-e1688479479743-1300x744.jpeg,FALSE,Minuman hazelnut dengan es krim
+Caramel Machiatoo Float,Float,,25,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQos8Um9VyiC6CSKI2ymekHWy8hJTZmphvTHw&s,FALSE,Caramel macchiato dengan es krim

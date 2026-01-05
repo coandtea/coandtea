@@ -1,0 +1,7 @@
+# Git mailmap file untuk mapping contributor
+# Format: New Name <new-email> Old Name <old-email>
+
+# Map semua nama lama ke nama baru "coandtea"
+coandtea <coandtea12@gmail.com> fakhrizamaris <coandtea12@gmail.com>
+coandtea <coandtea12@gmail.com> fakhriidjamaris <coandtea12@gmail.com>
+coandtea <coandtea12@gmail.com> <djamarisfakhri@gmail.com>

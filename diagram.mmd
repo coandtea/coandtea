@@ -1,0 +1,81 @@
+%% ===============================================
+%% DFD LEVEL 0 (DIAGRAM KONTEKS)
+%% Sistem Informasi Penjualan Co & Tea
+%% ===============================================
+
+graph TD
+    %% Entitas Eksternal
+    Pelanggan[Pelanggan]
+    Admin[Admin / Kasir]
+
+    %% Sistem Utama
+    Sistem((Sistem Informasi<br>Penjualan Co & Tea))
+
+    %% Aliran Data: Pelanggan <--> Sistem
+    Pelanggan -->|1. Pilih Menu & Varian| Sistem
+    Pelanggan -->|2. Data Checkout (Nama)| Sistem
+    Sistem -->|3. Info Menu & Harga| Pelanggan
+    Sistem -->|4. QR Code Pesanan| Pelanggan
+
+    %% Aliran Data: Admin <--> Sistem
+    Admin -->|5. Manajemen Menu (CRUD)| Sistem
+    Admin -->|6. Scan QR / Verifikasi| Sistem
+    Sistem -->|7. Laporan Penjualan| Admin
+    Sistem -->|8. Detail Status Pesanan| Admin
+
+%% ===============================================
+%% DFD LEVEL 1 (RINCIAN PROSES)
+%% Berdasarkan: ProductStore, CartStore, OrderStore
+%% ===============================================
+
+graph TD
+    %% Entitas
+    P[Pelanggan]
+    A[Admin / Kasir]
+
+    %% Data Stores (Tabel Database Supabase)
+    DS_Product[(DS: Products)]
+    DS_Cart[(DS: Cart Items)]
+    DS_Order[(DS: Orders)]
+
+    %% Proses 1.0: Kelola Menu
+    subgraph Proses_1 [1.0 Kelola Menu]
+        P1((1.0 Kelola<br>Data Menu))
+    end
+    A -->|Input Data Menu| P1
+    P1 -->|Insert/Update/Delete| DS_Product
+    DS_Product -->|Data Menu| P1
+
+    %% Proses 2.0: Pemesanan
+    subgraph Proses_2 [2.0 Transaksi Pemesanan]
+        P2((2.0 Pilih &<br>Masuk Keranjang))
+    end
+    DS_Product -->|Info Stok & Harga| P2
+    P -->|Pilih Item (Hot/Cold)| P2
+    P2 -->|Simpan Item Sesi| DS_Cart
+
+    %% Proses 3.0: Checkout
+    subgraph Proses_3 [3.0 Checkout & QR]
+        P3((3.0 Checkout &<br>Generate QR))
+    end
+    DS_Cart -->|Ambil Data Keranjang| P3
+    P -->|Konfirmasi Nama| P3
+    P3 -->|Simpan Pesanan Baru| DS_Order
+    DS_Order -->|Return Kode Unik| P3
+    P3 -->|Tampilkan QR Code| P
+
+    %% Proses 4.0: Verifikasi
+    subgraph Proses_4 [4.0 Verifikasi Pesanan]
+        P4((4.0 Scan &<br>Validasi))
+    end
+    A -->|Scan QR Pelanggan| P4
+    DS_Order -->|Cek Status Order| P4
+    P4 -->|Update Status: Verified| DS_Order
+    P4 -->|Info Validasi Sukses| A
+
+    %% Proses 5.0: Laporan
+    subgraph Proses_5 [5.0 Pelaporan]
+        P5((5.0 Laporan<br>Penjualan))
+    end
+    DS_Order -->|Rekap Data Transaksi| P5
+    P5 -->|Statistik Pendapatan| A

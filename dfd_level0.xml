@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-05-22T10:00:00.000Z" agent="Manual" etag="Wj9" version="21.0.0" type="device">
+  <diagram name="DFD Level 0" id="DFD-L0-CoTea">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="entity_pelanggan" value="Pelanggan" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="140" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="entity_admin" value="Admin / Kasir" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="640" y="240" width="140" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="process_sistem" value="Sistem Informasi&lt;br&gt;Penjualan Co &amp; Tea" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="330" y="200" width="160" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flow_1" value="1. Data Pesanan &amp; Checkout" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="entity_pelanggan" target="process_sistem">
+          <mxGeometry x="-0.1" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="110" y="223" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow_2" value="2. Info Menu &amp; QR Code" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="process_sistem" target="entity_pelanggan">
+          <mxGeometry x="0.1" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="343" y="337" />
+              <mxPoint x="110" y="337" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow_3" value="3. Kelola Menu &amp; Verifikasi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="entity_admin" target="process_sistem">
+          <mxGeometry x="0.1" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="710" y="223" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow_4" value="4. Laporan &amp; Detail Order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="process_sistem" target="entity_admin">
+          <mxGeometry x="-0.1" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="477" y="337" />
+              <mxPoint x="710" y="337" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
